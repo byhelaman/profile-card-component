@@ -1,0 +1,91 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desatured: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body{
+    margin: 0;
+    font-family: 'Kumbh Sans', 'sans-serif';
+    background: url(images/bg-pattern-top.svg) no-repeat right 35vw bottom 50vh,
+                url(images/bg-pattern-bottom.svg) no-repeat left 40vw top 45vh;
+    background-color: var(--dark-cyan);
+    display: flex;
+    height: 100vh;
+}
+
+.card__container{
+    background: #fff;
+    width: 325px;
+    height: 375px;
+    border-radius: 15px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile__photo{
+    margin: auto;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: -58px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.personal__data{
+    height: 145px;
+    padding: 70px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px #e7e7e7 solid;
+}
+
+
+.personal__data--name{
+    font-weight: 700;
+    color: var(--very-dark-desatured);
+    font-size: 18px;
+}
+
+.personal__data--age,
+.personal__data--city{
+    color: var(--dark-gray);
+}
+
+.personal__data--city{
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+.card__footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+    text-align: center;
+    color: var(--very-dark-desatured);
+}
+
+.stadistics__quantity{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.stadistics__units{
+    color: var(--dark-gray);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 950px) {
+    body {
+        background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    }
+
+    .card__container{
+        width: 350px;
+    }
+}
