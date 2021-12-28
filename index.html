@@ -1,46 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Profile card component</title>
 </head>
 
 <body>
-  <div class="card__container">
-    <div class="card__header">
-      <img src="images/bg-pattern-card.svg" alt="Background card" class="bg__image">
-    </div>
-    <div class="card__body">
-      <img src="images/image-victor.jpg" alt="Profile image" class="profile__photo">
-      <div class="personal__data">
-        <span class="personal__data--name">Victor Crest</span>
-        <span class="personal__data--age">26</span>
-        <div class="personal__data--city">London</div>
+  <main class="container">
+    <div class="container__card">
+      <div class="card__header">
+        <img src="images/bg-pattern-card.svg" alt="background card" class="bg__image">
+      </div>
+      
+      <div class="card__body">
+        <img src="images/image-victor.jpg" alt="profile photo" class="profile__photo">
+        <div class="personal__data">
+          <span class="personal__data--name">Victor Crest</span>
+          <span class="personal__data--age">26</span>
+          <div class="personal__data--city">London</div>
+        </div>
+      </div>
+  
+      <div class="card__footer">
+        <div class="stadistics">
+          <div class="stadistics__quantity">80K</div>
+          <div class="stadistics__units">Followers</div>
+        </div>
+  
+        <div class="stadistics">
+          <div class="stadistics__quantity">803K</div>
+          <div class="stadistics__units">Likes</div>
+        </div>
+  
+        <div class="stadistics">
+          <div class="stadistics__quantity">1.4K</div>
+          <div class="stadistics__units">Photos</div>
+        </div>
       </div>
     </div>
-
-    <div class="card__footer">
-      <div class="stadistics">
-        <div class="stadistics__quantity">80K</div>
-        <div class="stadistics__units">Followers</div>
-      </div>
-
-      <div class="stadistics">
-        <div class="stadistics__quantity">803K</div>
-        <div class="stadistics__units">Likes</div>
-      </div>
-
-      <div class="stadistics">
-        <div class="stadistics__quantity">1.4K</div>
-        <div class="stadistics__units">Photos</div>
-      </div>
-    </div>
-  </div>
-
+  </main>
 </body>
 </html>
