@@ -39,14 +39,14 @@
 }
 
 .profile__photo{
-    margin-top: -55px;
+    margin-top: -53px;
     position: absolute;
     border-radius: 50%;
     border: 5px solid #fff;
 }
 
 .personal__data{
-    margin: 72px 0 28px 0;
+    margin: 75px 0 25px 0;
 }
 
 .personal__data--name{
